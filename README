@@ -11,7 +11,7 @@ Apply patch kernel-3.1-support.diff
 # patch -d vpnclient/ < kernel-3.1-support.diff 
 
 Kernel source fix
-sudo sed -i 's/const\ struct\ net_device_ops\ \*netdev_ops;/struct\ net_device_ops\ \*netdev_ops;/' `find /usr/src -name netdevice.h`
+# sudo sed -i 's/const\ struct\ net_device_ops\ \*netdev_ops;/struct\ net_device_ops\ \*netdev_ops;/' `find /usr/src -name netdevice.h`
 
 Credits:
 http://forum.tuxx-home.at/viewtopic.php?f=15&t=790&sid=0f466816287ec0ec3941772532ab725e
