@@ -28,5 +28,5 @@ Kernel source fix
 Credits
 -------
 
-http://forum.tuxx-home.at/viewforum.php?f=15&sid=379c517ec0a051e76623cc901f3c4db4
-http://www.lamnk.com/blog/vpn/how-to-install-cisco-vpn-client-on-ubuntu-jaunty-jackalope-and-karmic-koala-64-bit/
+* http://forum.tuxx-home.at/viewforum.php?f=15&sid=379c517ec0a051e76623cc901f3c4db4
+* http://www.lamnk.com/blog/vpn/how-to-install-cisco-vpn-client-on-ubuntu-jaunty-jackalope-and-karmic-koala-64-bit/
