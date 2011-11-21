@@ -8,33 +8,16 @@ diff --git driver_build.sh driver_build.sh
 index 21f311e..17e9064 100755
 --- driver_build.sh
 +++ driver_build.sh
-@@ -26,6 +26,7 @@ ce"
- }
- 
- CC=cc
-+#CC=gcc34
- LD=ld
- 
- KSRCDIR=$1
 @@ -46,6 +47,9 @@ else
  fi
  
  case `uname -r` in
-+3.[01].*)
++3.*.*)
 +    make "KERNEL_SOURCES=${KSRCDIR}"
 +    ;;
  2.[56].*)
      make "KERNEL_SOURCES=${KSRCDIR}"
      ;;
-@@ -58,7 +62,7 @@ case `uname -r` in
- if [ `uname -m` = "x86_64" ]; then
-   $LD -r -o cisco_ipsec linuxkernelapi.o frag.o linuxcniapi.o IPSecDrvOS_linux.o interceptor.o libdriver64.so
- else  
--  $LD -r -o cisco_ipsec linuxkernelapi.o frag.o linuxcniapi.o IPSecDrvOS_linux.o interceptor.o libdriver.so
-+  $LD  -r -o cisco_ipsec linuxkernelapi.o frag.o linuxcniapi.o IPSecDrvOS_linux.o interceptor.o libdriver.so
- fi
-     ;;
- esac
 diff --git vpn_install vpn_install
 index 30e37e5..35a41fc 100755
 --- vpn_install
@@ -43,7 +26,7 @@ index 30e37e5..35a41fc 100755
  # Make module
  #
  case `uname -r` in
-+3.[01].*)
++3.*.*)
 +    MODULE_NAME=cisco_ipsec.ko
 +    ;;
  2.[56].*)
@@ -57,7 +40,7 @@ index a877243..5185398 100755
  VPNDEV="cipsec0"
  VPNMOD=cisco_ipsec
  case `uname -r` in
-+3.[01].*)
++3.*.*)
 +    VPNMOD_FILE="${VPNMOD}.ko"
 +    ;;
  2.[56].*)
@@ -67,8 +50,8 @@ index a877243..5185398 100755
  		exit 1
  	fi
  	case "`uname -r`" in
-+        3.1.*)
-+                ;;
++	3.*.*)
++              	;;
 +	3.0.*)
 +              	;;
  	2.6.*)

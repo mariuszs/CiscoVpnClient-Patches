@@ -16,10 +16,10 @@ Apply patch vpnclient-linux-2.6.31-final.diff
     wget https://github.com/ruphert/CiscoVpnClient-Patches/raw/master/vpnclient-linux-2.6.31-final.diff
     patch -d vpnclient/ < vpnclient-linux-2.6.31-final.diff
 
-Apply patch kernel-3.1-support.diff
+Apply patch kernel-3.x-support.diff
 
-    wget https://github.com/ruphert/CiscoVpnClient-Patches/raw/master/kernel-3.1-support.diff
-    patch -d vpnclient/ < kernel-3.1-support.diff 
+    wget https://github.com/ruphert/CiscoVpnClient-Patches/raw/master/kernel-3.x-support.diff
+    patch -d vpnclient/ < kernel-3.x-support.diff 
 
 Kernel source fix
 

@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# Cool to put in your $HOME/.profile or $HOME/.bashrc or whatever ...
+#  'complete -W 'connect disconnect' vpn'
+#
+
+PROFILE=$2
+
+if [ $1 == "connect" ]; then
+	# See http://forum.tuxx-home.at/viewtopic.php?f=15&t=457&st=0&sk=t&sd=a&start=15
+	sudo sh -c 'echo 0 > /sys/devices/system/cpu/cpu1/online'
+	sudo /etc/init.d/vpnclient_init start
+	vpnclient $1 $PROFILE nocertpwd
+elif [ $1 == "disconnect" ]; then
+	vpnclient $1 
+	sudo sh -c 'echo 1 > /sys/devices/system/cpu/cpu1/online'
+	sudo /etc/init.d/vpnclient_init stop
+else 
+	echo "Unknown option $1";
+fi
+
