@@ -25,6 +25,11 @@ Kernel source fix
 
     sudo sed -i 's/const\ struct\ net_device_ops\ \*netdev_ops;/struct\ net_device_ops\ \*netdev_ops;/' `find /usr/src -name netdevice.h`
 
+Usability
+---------
+
+This patch was tested on Fedora 16 (Verne) with PAE kernel (3.1.8-2.fc16.i686.PAE).
+
 Credits
 -------
 
