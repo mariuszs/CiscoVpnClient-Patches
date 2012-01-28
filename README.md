@@ -3,6 +3,8 @@ Cisco VPN Client Patches
 
 Linux Patches for Unsuported Cisco VPN Client (32bit)
 
+Kernel 3.2.x is not supported! Kernel 3.1.x is last supported kernel.
+
 Usage
 -----
 
