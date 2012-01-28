@@ -6,7 +6,7 @@ Linux Patches for Unsuported Cisco VPN Client (32bit)
 Usage
 -----
 
-Download and unpack vpnclient-linux-x86_64-4.8.02.0030-k9.tar.gz
+Download and unpack vpnclient-linux-x86_64-4.8.02.0030-k9.tar.gz (Linux 32-bit and x86_64 (biarch))
 
     wget http://projects.tuxx-home.at/ciscovpn/clients/linux/4.8.02/vpnclient-linux-x86_64-4.8.02.0030-k9.tar.gz
     tar xzvf vpnclient-linux-x86_64-4.8.02.0030-k9.tar.gz 
@@ -35,3 +35,8 @@ Credits
 
 * http://forum.tuxx-home.at/viewforum.php?f=15&sid=379c517ec0a051e76623cc901f3c4db4
 * http://www.lamnk.com/blog/vpn/how-to-install-cisco-vpn-client-on-ubuntu-jaunty-jackalope-and-karmic-koala-64-bit/
+
+Release Notes
+------
+http://www.cisco.com/en/US/docs/security/vpn_client/cisco_vpn_client/vpn_client48/release/notes/48client.html
+http://www.fi.upm.es/ccfi/vpn/cliente/vpnclient-linux-4.8.02.0030-readme.txt
